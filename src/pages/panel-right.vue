@@ -12,7 +12,7 @@
     <f7-toolbar position="bottom" no-shadow no-hairline>
       <!-- Version -->
       <div class="version">
-        <small>v. 1.0.132</small>
+        <small>v. 1.0.133</small>
       </div>
     </f7-toolbar>
   </f7-page>
