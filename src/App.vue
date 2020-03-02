@@ -58,6 +58,13 @@
             document.addEventListener('backbutton', () => {
                 this.$f7.views.main.router.back()
             }, false);
+
+            // ADMOB
+            admob.banner.config({
+                id: 'ca-app-pub-3279001848353929/5165439185',
+            });
+            // Create banner
+            admob.banner.prepare();
         }
     }
 </script>

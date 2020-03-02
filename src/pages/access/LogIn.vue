@@ -73,6 +73,9 @@
         mounted() {
             //console.log('-> LogIn');
 
+            // Show the banner
+            admob.banner.show();
+
             if (!localStorage.allowed_users) {
                 localStorage.allowed_users = JSON.stringify([]);
             }
