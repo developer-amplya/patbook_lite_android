@@ -27,7 +27,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.3.0'
+        classpath 'com.android.tools.build:gradle:3.6.3'
     }
 }
 
@@ -90,7 +90,7 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
-apply from: "../com-sarriaroman-photoviewer/free-photoviewer.gradle"
+apply from: "../com-sarriaroman-photoviewer/lite-photoviewer.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras1 = file('build-extras.gradle').exists()
@@ -167,8 +167,9 @@ android {
     defaultConfig {
         versionCode cdvVersionCode ?: new BigInteger("" + privateHelpers.extractIntFromManifest("versionCode"))
         applicationId privateHelpers.extractStringFromManifest("package")
+      minSdkVersion 19
 
-        if (cdvMinSdkVersion != null) {
+      if (cdvMinSdkVersion != null) {
             minSdkVersion cdvMinSdkVersion
         }
     }
@@ -267,7 +268,8 @@ dependencies {
     implementation fileTree(dir: 'libs', include: '*.jar')
     // SUB-PROJECT DEPENDENCIES START
     implementation(project(path: ":CordovaLib"))
-    implementation "com.android.support:support-v4:24.1.1+"
+    implementation "com.google.android.gms:play-services-base:11.0.4"
+    implementation "com.google.android.gms:play-services-ads:11.0.4"
     // SUB-PROJECT DEPENDENCIES END
 }
 

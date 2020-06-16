@@ -1,30 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="es.patbook.app.free" version="1.0.113" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="es.patbook.app.lite" version="1.0.134" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="PhotoViewer">
         <param name="android-package" value="com.sarriaroman.PhotoViewer.PhotoViewer" />
     </feature>
-    <feature name="Camera">
-        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
-    </feature>
-    <feature name="File">
-        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
-        <param name="onload" value="true" />
-    </feature>
-    <allow-navigation href="cdvfile:*" />
-    <feature name="FileTransfer">
-        <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
-    </feature>
-    <feature name="StatusBar">
-        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
-        <param name="onload" value="true" />
-    </feature>
-    <feature name="Whitelist">
-        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
-        <param name="onload" value="true" />
-    </feature>
-    <name>Patbook</name>
+    <name>Patbook Lite</name>
     <description />
-    <author email="contacto@webaliza.net" href="https://webaliza.net">Francisco Bosch</author>
+    <author email="info@pat-book.com" href="http://www.pat-book.com">El Artesano de Ideas</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -33,39 +14,22 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <allow-navigation href="data:*" />
     <allow-intent href="market:*" />
     <icon density="ldpi" src="res/icon/android/drawable-ldpi-icon.png" />
     <icon density="mdpi" src="res/icon/android/drawable-mdpi-icon.png" />
     <icon density="hdpi" src="res/icon/android/drawable-hdpi-icon.png" />
     <icon density="xhdpi" src="res/icon/android/drawable-xhdpi-icon.png" />
-    <splash density="land-hdpi" src="res/screen/android/drawable-land-hdpi-screen.png" />
-    <splash density="land-ldpi" src="res/screen/android/drawable-land-ldpi-screen.png" />
-    <splash density="land-mdpi" src="res/screen/android/drawable-land-mdpi-screen.png" />
-    <splash density="land-xhdpi" src="res/screen/android/drawable-land-xhdpi-screen.png" />
-    <splash density="port-hdpi" src="res/screen/android/drawable-port-hdpi-screen.png" />
-    <splash density="port-ldpi" src="res/screen/android/drawable-port-ldpi-screen.png" />
-    <splash density="port-mdpi" src="res/screen/android/drawable-port-mdpi-screen.png" />
-    <splash density="port-xhdpi" src="res/screen/android/drawable-port-xhdpi-screen.png" />
     <preference name="loglevel" value="DEBUG" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="StatusBarBackgroundColor" value="#000000" />
-    <preference name="StatusBarStyle" value="lightcontent" />
-    <preference name="ios-statusbarstyle" value="black-opaque" />
     <preference name="StatusBarOverlaysWebView" value="true" />
-    <preference name="permissions" value="none" />
-    <preference name="orientation" value="default" />
-    <preference name="target-device" value="universal" />
-    <preference name="fullscreen" value="false" />
-    <preference name="webviewbounce" value="true" />
-    <preference name="prerendered-icon" value="true" />
-    <preference name="stay-in-webview" value="false" />
-    <preference name="detect-data-types" value="true" />
-    <preference name="exit-on-suspend" value="false" />
-    <preference name="show-splash-screen-spinner" value="true" />
-    <preference name="auto-hide-splash-screen" value="true" />
-    <preference name="disable-cursor" value="false" />
-    <preference name="android-minSdkVersion" value="16" />
-    <preference name="android-targetSdkVersion" value="26" />
-    <preference name="android-installLocation" value="auto" />
-    <preference name="phonegap-version" value="cli-6.5.0" />
+    <preference name="Fullscreen" value="false" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+    <preference name="phonegap-version" value="cli-9.0.0" />
+    <preference name="android-minSdkVersion" value="19" />
+    <preference name="android-targetSdkVersion" value="28" />
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
 </widget>

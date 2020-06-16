@@ -19056,6 +19056,21 @@ iframe#viAd {
     font-size: 16px;
 }
 
+.copy-msg {
+    text-align: center;
+}
+
+.image-holder img {
+    width: 100%;
+}
+
+.zoom-in {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 5px
+}
+
 /* COLORS */
 .purple {
     background-color: #c36eb5 !important;
@@ -19096,11 +19111,28 @@ to {opacity: 1;}
     animation-name: change-opacity-data-v-1c27ef7a;
     animation-duration: 4s;
 }
-
-
-.guide[data-v-488397d9] {
-    background-color: #1ABAD4;
+.toolbar[data-v-1c27ef7a] {
+    background-color: transparent !important;
+}
+.toolbar p[data-v-1c27ef7a] {
+    width: 100%;
+    border-top: 1px solid #ffffff;
+    padding-top: 6px;
+    padding-left: 6px;
+    text-align: left;
     color: #ffffff;
+}
+.version[data-v-1c27ef7a] {
+    position: absolute;
+    padding-top: 6px;
+    right: 10px;
+    color: #ffffff;
+}
+
+
+.guide[data-v-488397d9], .guide .block[data-v-488397d9] {
+    background-color: #1ABAD4;
+    color: #ffffff !important;
 }
 .guide h1[data-v-488397d9] {
     text-align: center;
@@ -19146,42 +19178,42 @@ to {opacity: 1;}
 }
 
 
-.list img[data-v-5a90ec03] {
+#home .list img {
     width: 50px;
     border-radius: 100%;
 }
-.allergies img[data-v-5a90ec03] {
+#home .allergies img {
     background-color: #c36eb5;
 }
-.medicines img[data-v-5a90ec03] {
+#home .medicines img {
     background-color: #F2BE4C;
 }
-.medical-visit-preparations img[data-v-5a90ec03] {
+#home .medical-visit-preparations img {
     background-color: #6F715E;
 }
-.medical-visit img[data-v-5a90ec03] {
+#home .medical-visit img {
     background-color: #FF7E3A;
 }
-.diagnostic-tests img[data-v-5a90ec03] {
+#home .diagnostic-tests img {
     background-color: #FF3183;
 }
-.header-container[data-v-5a90ec03] {
+#home .header-container {
     display: flex;
 }
-.header-container .col[data-v-5a90ec03] {
+#home .header-container .col {
     flex: 1;
 }
-.edit-user[data-v-5a90ec03], .more[data-v-5a90ec03] {
+#home .edit-user, .more {
     padding: 20px;
     color: #8E8E93;
 }
-.edit-user i[data-v-5a90ec03], .more i[data-v-5a90ec03] {
+#home .edit-user i, .more i {
     font-size: 35px !important;
 }
-.col[data-v-5a90ec03]:nth-child(3) {
+#home .col:nth-child(3) {
     text-align: right;
 }
-.user-pic[data-v-5a90ec03] {
+#home .user-pic {
     width: 100px;
     height: 100px;
     margin: 20px auto 0px;
@@ -19189,31 +19221,34 @@ to {opacity: 1;}
     border: 3px solid #1ABAD4;
     border-radius: 100%;
 }
-.user-pic img[data-v-5a90ec03] {
+#home .user-pic img {
     width: 100%;
 }
-.user-name[data-v-5a90ec03] {
+#home .user-name {
     text-align: center;
     color: #1ABAD4;
 }
-.agenda[data-v-5a90ec03], .emergencia[data-v-5a90ec03] {
+#home .agenda, .emergencia {
     width: 50%;
 }
-.agenda > span[data-v-5a90ec03]:first-child, .emergencia > span[data-v-5a90ec03]:first-child {
+#home .agenda > span:first-child, .emergencia > span:first-child {
     display: flex;
     align-items: center;
     width: 35px;
 }
-.agenda > span > img[data-v-5a90ec03], .emergencia > span > img[data-v-5a90ec03] {
+#home .agenda > span > img, .emergencia > span > img {
     width: 100%;
 }
-.agenda[data-v-5a90ec03] {
+#home .agenda {
     background-color: var(--f7-theme-color);
     color: #ffffff;
 }
-.emergencia[data-v-5a90ec03] {
+#home .emergencia {
     background-color: #ff0000;
     color: #ffffff;
+}
+.ios #home .toolbar-inner {
+    padding: 0;
 }
 
 
@@ -19264,7 +19299,19 @@ li span[data-v-61c44b3d] {
 
 
 
-.toolbar a[data-v-8bbf078a] {
+.emergencies-page h2,
+.emergencies-page a {
+    color: #ff0000;
+}
+.emergencies-page p {
+    font-size: 16px;
+}
+
+
+.blue-page .navbar, .blue-page .toolbar {
+    background-color: #1ABAD4;
+}
+.agenda-page .toolbar a {
     font-size: 48px !important;
 }
 
@@ -19274,12 +19321,25 @@ ul[data-v-27df5054], li[data-v-27df5054] {
 }
 
 
-.copy-msg[data-v-36aba94b] {
-    text-align: center;
+.blue-page .navbar, .blue-page .toolbar {
+    background-color: #1ABAD4;
 }
 
 
-.toolbar a[data-v-505605f9] {
+.blue-page .navbar, .blue-page .toolbar {
+    background-color: #1ABAD4;
+}
+
+
+.blue-page .navbar, .blue-page .toolbar {
+    background-color: #1ABAD4;
+}
+
+
+.purple-page .navbar, .purple-page .toolbar {
+    background-color: #c36eb5;
+}
+.allergies-page .toolbar a {
     font-size: 48px !important;
 }
 
@@ -19295,113 +19355,136 @@ ul[data-v-27df5054], li[data-v-27df5054] {
 
 
 
-.navbar[data-v-45c8d392] {
+.purple-page .navbar, .purple-page .toolbar {
     background-color: #c36eb5;
 }
 
 
-.copy-msg[data-v-02f1a939] {
-    text-align: center;
-}
-.navbar[data-v-02f1a939], .toolbar[data-v-02f1a939] {
+.purple-page .navbar, .purple-page .toolbar {
     background-color: #c36eb5;
 }
 
 
-.toolbar a[data-v-9e7bc022] {
+.purple-page .navbar, .purple-page .toolbar {
+    background-color: #c36eb5;
+}
+
+
+.yellow-page .navbar, .yellow-page .toolbar {
+    background-color: #F2BE4C;
+}
+.medicines-page .toolbar a {
     font-size: 48px !important;
 }
 
 
-.navbar[data-v-1389c5f0] {
+.yellow-page .navbar, .yellow-page .toolbar {
     background-color: #F2BE4C;
 }
-.date-picker[data-v-1389c5f0] {
+.medicines-page .date-picker {
     margin-top: -24px;
 }
 
 
-.copy-msg[data-v-60c88e83] {
-    text-align: center;
-}
-.navbar[data-v-60c88e83], .toolbar[data-v-60c88e83] {
+.yellow-page .navbar, .yellow-page .toolbar {
     background-color: #F2BE4C;
 }
-.image-holder img[data-v-60c88e83] {
-    width: 100%;
-}
-.zoom-in[data-v-60c88e83] {
-    display: block;
-    position: absolute;
-    right: 10px;
-    top: 5px
+
+
+.yellow-page .navbar, .yellow-page .toolbar {
+    background-color: #F2BE4C;
 }
 
 
-.toolbar a[data-v-a97e4b9a] {
+.stone-page .navbar, .stone-page .toolbar {
+    background-color: #6F715E;
+}
+.medical-visit-preparations-page .toolbar a {
     font-size: 48px !important;
 }
 
 
-.navbar[data-v-2323d768] {
+.stone-page .navbar, .stone-page .toolbar {
     background-color: #6F715E;
 }
 
 
-.copy-msg[data-v-6ef47fbf] {
-    text-align: center;
-}
-.navbar[data-v-6ef47fbf], .toolbar[data-v-6ef47fbf] {
+.stone-page .navbar, .stone-page .toolbar {
     background-color: #6F715E;
 }
 
 
-.toolbar a[data-v-4df2fef8] {
+.stone-page .navbar, .stone-page .toolbar {
+    background-color: #6F715E;
+}
+
+
+.orange-page .navbar, .orange-page .toolbar {
+    background-color: #FF7E3A;
+}
+.medical-visits-page .toolbar a {
     font-size: 48px !important;
 }
 
 
-.navbar[data-v-08900c46] {
+.orange-page .navbar, .orange-page .toolbar {
     background-color: #FF7E3A;
 }
 
 
-.copy-msg[data-v-0ae74c4e] {
-    text-align: center;
-}
-.navbar[data-v-0ae74c4e], .toolbar[data-v-0ae74c4e] {
+.orange-page .navbar, .orange-page .toolbar {
     background-color: #FF7E3A;
 }
 
 
-.toolbar a[data-v-3bf9fe98] {
+.orange-page .navbar, .orange-page .toolbar {
+    background-color: #FF7E3A;
+}
+
+
+.pink-page .navbar, .pink-page .toolbar {
+    background-color: #FF3183;
+}
+.diagnostic-test-page .toolbar a {
     font-size: 48px !important;
 }
 
 
-.navbar[data-v-e0dcce1e] {
+.pink-page .navbar, .pink-page .toolbar {
     background-color: #FF3183;
 }
 
 
-.copy-msg[data-v-1b7ce08c] {
+.pink-page .navbar, .pink-page .toolbar {
+    background-color: #FF3183;
+}
+
+
+.pink-page .navbar, .pink-page .toolbar {
+    background-color: #FF3183;
+}
+
+
+.guide h1[data-v-2f748ed9] {
     text-align: center;
 }
-.navbar[data-v-1b7ce08c], .toolbar[data-v-1b7ce08c] {
-    background-color: #FF3183;
-}
-.image-holder img[data-v-1b7ce08c] {
-    width: 100%;
-}
-.zoom-in[data-v-1b7ce08c] {
-    display: block;
-    position: absolute;
-    right: 10px;
-    top: 5px
+.guide h2[data-v-2f748ed9] {
+    line-height: 28px;
 }
 
 
 .navbar[data-v-02e25e0e] {
     background-color: #000000;
+}
+
+
+.toolbar[data-v-58d854bf] {
+  background-color: transparent !important;
+}
+.version[data-v-58d854bf] {
+  position: absolute;
+  padding-top: 6px;
+  right: 10px;
+  color: rgba(255, 255, 255, 0.75);
 }
 

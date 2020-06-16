@@ -34,14 +34,14 @@
   "homepage": "http://framework7.io/vue/",
   "dependencies": {
     "axios": "^0.18.0",
+    "cordova-android": "8.0.0",
+    "cordova-ios": "^4.1.1",
     "framework7": "^4.4.0",
     "framework7-icons": "^2.3.1",
     "framework7-vue": "^4.4.0",
     "material-design-icons": "^3.0.1",
     "vue": "^2.6.10",
-    "vuex": "^3.1.1",
-    "cordova-android": "^8.0.0",
-    "cordova-ios": "^4.1.1"
+    "vuex": "^3.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
@@ -89,6 +89,9 @@
     "platforms": [
       "android",
       "ios"
-    ]
+    ],
+    "plugins": {
+      "cordova-plugin-whitelist": {}
+    }
   }
 }
