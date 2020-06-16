@@ -62,23 +62,27 @@
         data() {
             return {
                 log_in: {
-                    email: '',
-                    password: '',
-                    //email: 'reezooh@gmail.com',
-                    //password: '123456',
+                    //email: '',
+                    //password: '',
+                    email: 'reezooh@gmail.com',
+                    password: '123456',
                     token: ''
                 }
             };
         },
         mounted() {
-            //console.log('-> LogIn');
-
-            // Show the banner
-            admob.banner.show();
 
             if (!localStorage.allowed_users) {
                 localStorage.allowed_users = JSON.stringify([]);
             }
+
+            // ADMOB
+            admob.banner.show({
+                id: {
+                    // replace with your ad unit IDs
+                    ios: "ca-app-pub-3279001848353929/5165439185"
+                }
+            });
         },
         methods: {
             do_login() {
@@ -92,7 +96,7 @@
 
                 /* Cheking if the user is registered in the device and so he or she is allowed to connect with the
                 device */
-                if (localStorage.allowed_users !== '') {
+                if (localStorage.allowed_users !== '' && localStorage.allowed_users !== undefined) {
                     var isAllowed = false;
                     var allowedUsers = JSON.parse(localStorage.allowed_users);
                     allowedUsers.forEach((item) => {
