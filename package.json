@@ -16,7 +16,6 @@
     "url": "git+https://github.com/framework7io/framework7-template-vue-webpack.git"
   },
   "keywords": [
-    "ios",
     "webpack",
     "framework7",
     "vue",
@@ -35,7 +34,6 @@
   "dependencies": {
     "axios": "^0.18.0",
     "cordova-android": "8.0.0",
-    "cordova-ios": "^4.1.1",
     "framework7": "^4.4.0",
     "framework7-icons": "^2.3.1",
     "framework7-vue": "^4.4.0",
@@ -87,8 +85,7 @@
   ],
   "cordova": {
     "platforms": [
-      "android",
-      "ios"
+      "android"
     ],
     "plugins": {
       "cordova-plugin-whitelist": {}

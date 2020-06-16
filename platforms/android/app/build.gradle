@@ -27,7 +27,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.3'
+        classpath 'com.android.tools.build:gradle:3.3.0'
     }
 }
 
@@ -167,9 +167,8 @@ android {
     defaultConfig {
         versionCode cdvVersionCode ?: new BigInteger("" + privateHelpers.extractIntFromManifest("versionCode"))
         applicationId privateHelpers.extractStringFromManifest("package")
-      minSdkVersion 19
 
-      if (cdvMinSdkVersion != null) {
+        if (cdvMinSdkVersion != null) {
             minSdkVersion cdvMinSdkVersion
         }
     }
@@ -268,6 +267,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: '*.jar')
     // SUB-PROJECT DEPENDENCIES START
     implementation(project(path: ":CordovaLib"))
+    implementation "com.google.android.gms:play-services-ads:19.0.1"
     implementation "com.google.android.gms:play-services-base:11.0.4"
     implementation "com.google.android.gms:play-services-ads:11.0.4"
     // SUB-PROJECT DEPENDENCIES END

@@ -7,11 +7,19 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "PhotoViewer"
       ]
+    },
+    {
+      "id": "cordova-admob-plus.AdMob",
+      "file": "plugins/cordova-admob-plus/www/admob.js",
+      "pluginId": "cordova-admob-plus",
+      "clobbers": [
+        "admob"
+      ]
     }
   ];
   module.exports.metadata = {
     "com-sarriaroman-photoviewer": "1.2.2",
-    "cordova-admob-sdk": "0.24.1",
-    "cordova-plugin-whitelist": "1.3.3"
+    "cordova-admob-plus": "0.0.0",
+    "cordova-admob-sdk": "0.24.1"
   };
 });

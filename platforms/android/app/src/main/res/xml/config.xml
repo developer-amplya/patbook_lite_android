@@ -3,6 +3,9 @@
     <feature name="PhotoViewer">
         <param name="android-package" value="com.sarriaroman.PhotoViewer.PhotoViewer" />
     </feature>
+    <feature name="AdMob">
+        <param name="android-package" value="admob.plugin.AdMob" />
+    </feature>
     <name>Patbook Lite</name>
     <description />
     <author email="info@pat-book.com" href="http://www.pat-book.com">El Artesano de Ideas</author>
@@ -28,8 +31,4 @@
     <preference name="phonegap-version" value="cli-9.0.0" />
     <preference name="android-minSdkVersion" value="19" />
     <preference name="android-targetSdkVersion" value="28" />
-    <feature name="Whitelist">
-        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
-        <param name="onload" value="true" />
-    </feature>
 </widget>
