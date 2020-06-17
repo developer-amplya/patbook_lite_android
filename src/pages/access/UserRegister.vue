@@ -143,7 +143,8 @@
                     email: this.register.email,
                     password: this.register.password,
                     password_confirmation: this.register.password_confirmation,
-                    consent: this.register.consent
+                    consent: this.register.consent,
+                    platform: "android"
                 })
                     .then((response) => {
                         console.log(response);
