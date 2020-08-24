@@ -284,7 +284,7 @@
                 let uri = encodeURI(API_PATH + 'diagnostic-tests/update-image');
                 let options = new FileUploadOptions();
                 options.fileKey = "file";
-                options.fileName = path.substr(path.lastIndexOf('/') + 1);
+                options.fileName = this.details.image.substr(this.details.image.lastIndexOf('/') + 1);
                 options.mimeType = "image/jpeg";
                 options.httpMethod = "POST";
                 options.chunkedMode = true;
@@ -293,7 +293,7 @@
                 };
 
                 let ft = new FileTransfer();
-                ft.upload(path, uri, this.success, this.error, options);
+                ft.upload(this.details.image, uri, this.success, this.error, options);
             },
             success(response) {
                 //console.log(response);
