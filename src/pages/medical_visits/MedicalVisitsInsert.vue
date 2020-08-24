@@ -329,7 +329,7 @@
                 this.image = e;
             },
             uploadImage(record_id) {
-                let uri = encodeURI(API_PATH + 'medicines/update-image');
+                let uri = encodeURI(API_PATH + 'medical-visits/update-image');
                 let options = new FileUploadOptions();
                 options.fileKey = "file";
                 options.fileName = this.image.substr(this.image.lastIndexOf('/') + 1);
