@@ -36,7 +36,5 @@
         <variable name="APP_ID_ANDROID" value="ca-app-pub-3279001848353929~5264715374" />
     </plugin>
     <plugin name="cordova-plugin-whitelist" spec="~1.3.3" />
-    <plugin name="cordova-plugin-purchase" />
-    <plugin name="cordova-plugin-network-information" />
     <engine name="android" spec="8.0.0" />
 </widget>
