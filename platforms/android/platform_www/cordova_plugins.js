@@ -20,6 +20,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
   module.exports.metadata = {
     "com-sarriaroman-photoviewer": "1.2.2",
     "cordova-admob-plus": "0.0.0",
-    "cordova-admob-sdk": "0.24.1"
+    "cordova-admob-sdk": "0.24.1",
+    "cordova-android-play-services-gradle-release": "4.0.0"
   };
 });

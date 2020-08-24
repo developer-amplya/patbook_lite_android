@@ -4,12 +4,12 @@
 
         <f7-toolbar position="bottom" no-shadow no-hairline>
             <p>
-                <small>&copy; 2019 El Artesano de Ideas, S.L.</small>
+                <small>&copy; 2020 El Artesano de Ideas, S.L.</small>
             </p>
 
             <!-- Version -->
             <div class="version">
-                <small>v. 1.0.134</small>
+                <small>v. 1.0.136</small>
             </div>
         </f7-toolbar>
     </f7-page>

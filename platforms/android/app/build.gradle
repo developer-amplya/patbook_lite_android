@@ -91,6 +91,7 @@ ext {
 
 // PLUGIN GRADLE EXTENSIONS START
 apply from: "../com-sarriaroman-photoviewer/lite-photoviewer.gradle"
+apply from: "../cordova-android-play-services-gradle-release/lite-cordova-android-play-services-gradle-release.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras1 = file('build-extras.gradle').exists()
