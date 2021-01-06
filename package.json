@@ -32,7 +32,7 @@
   },
   "homepage": "http://framework7.io/vue/",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "cordova-android": "8.0.0",
     "cordova-android-play-services-gradle-release": "^4.0.0",
     "framework7": "^4.5.2",
